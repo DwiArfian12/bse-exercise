@@ -273,3 +273,87 @@ nav .menu {
   width: 100%;
   cursor: pointer;
 }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 42px;
+  position: absolute;
+  left: 147px;
+  bottom: 141px;
+}
+
+.box-text {
+  width: 591px;
+  color: #000;
+  font-family: Inter;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.22px;
+}
+
+.frame-19 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+}
+
+.frame-16 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Group-13 {
+  width: 60px;
+  height: 60px;
+}
+
+.text-mini1 {
+  color: var(--neutral-4, #9fafc1);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.frame-17 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Group-14 {
+  width: 60px;
+  height: 60px;
+}
+
+.text-mini2 {
+  color: var(--neutral-4, #9fafc1);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.frame-18 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.Group-15 {
+  width: 60px;
+  height: 60px;
+}
+
+.text-mini3 {
+  color: var(--neutral-4, #9fafc1);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
