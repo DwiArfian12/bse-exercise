@@ -21,7 +21,7 @@ a {
 body {
   margin: 0;
   box-sizing: border-box;
-  font-family: Helvetiva;
+  font-family: Helvetica;
 }
 
 .container {
@@ -50,9 +50,7 @@ nav .logo {
   color: var(--neutral-6, #29323d);
   font-family: "AlianzaScript600", Helvetica;
   font-size: 24px;
-  font-style: normal;
   font-weight: 600;
-  line-height: normal;
 }
 
 nav .menu {
@@ -64,9 +62,7 @@ nav .menu {
   color: var(--neutral-7, #232323);
   font-family: Helvetica;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 
 .menu .first-menu {
@@ -100,4 +96,180 @@ nav .menu {
   border-radius: 0px 5px 6px 0px;
   border: 1px solid var(--neutral-7, #232323);
   background: var(--neutral-1, #fff);
+}
+
+#home {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+#home .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.title h1 {
+  color: var(--neutral-6, #29323d);
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.title p {
+  color: var(--neutral-4, #9fafc1);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#home .top {
+  display: flex;
+  align-items: flex-start;
+  gap: 43px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.top .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 51px;
+  border-radius: 5px;
+}
+
+.top .right {
+  width: 479px;
+  height: 780px;
+  border-radius: 5px;
+  background: var(--neutral-2, #edf0f4);
+}
+
+.left .img {
+  width: 601px;
+  height: 400px;
+  border-radius: 5px;
+  background: var(--neutral-2, #edf0f4);
+}
+
+.left .quotes {
+  color: var(--neutral-4, #9fafc1);
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.left .author {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.author .author-img {
+  width: 63px;
+  height: 63px;
+  flex-shrink: 0;
+}
+
+.author .identity {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.author .identity h3 {
+  color: var(--neutral-6, #29323d);
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.author .identity p {
+  color: var(--neutral-4, #9fafc1);
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+}
+
+.left .line {
+  width: 148px;
+  height: 4px;
+  background: var(--neutral-2, #edf0f4);
+}
+
+.right .title {
+  display: flex;
+  width: 313px;
+  flex-direction: column;
+  text-align: center;
+}
+
+.right .title h3 {
+  color: var(--neutral-6, #29323d);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.right .title p {
+  color: var(--neutral-4, #9fafc1);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.right form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 48px;
+  padding: 40px;
+}
+
+.right form .fg {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 11px;
+}
+
+.right form .fg label {
+  color: var(--neutral-6, #29323d);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.right form .fg input {
+  width: 100%;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  border: 3px solid var(--neutral-4, #9fafc1);
+  background: var(--neutral-1, #fff);
+  color: var(--neutral-6);
+  font-size: 22px;
+  font-weight: 400;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.right form button {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 3px;
+  background: var(--neutral-6, #29323d);
+  height: 70px;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
 }
