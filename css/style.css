@@ -1,17 +1,27 @@
 :root {
-  --n-1: #FFFFFF;
-  --n-2: #EDF0F4;
-  --n-3: #C9D3DD;
-  --n-4: #9FAFC1;  
-  --n-5: #3B4754;  
-  --n-6: #29323D;  
-  --n-7: #232323;  
+  --neutral-1: #ffffff;
+  --neutral-2: #edf0f4;
+  --neutral-3: #c9d3dd;
+  --neutral-4: #9fafc1;
+  --neutral-5: #3b4754;
+  --neutral-6: #29323d;
+  --neutral-7: #232323;
+}
 
+@font-face {
+  font-family: "AlianzaScript600";
+  src: url("../font/AlianzaScript600.ttf") format("truetype");
+  /* You can also include other font formats (e.g., woff, woff2) for better browser compatibility */
+}
+
+a {
+  text-decoration: none;
 }
 
 body {
   margin: 0;
   box-sizing: border-box;
+  font-family: Helvetiva;
 }
 
 .container {
@@ -19,14 +29,75 @@ body {
   flex-direction: column;
   align-items: flex-start;
   background: #fff;
+  height: 1660px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 nav {
+  box-sizing: border-box;
   display: flex;
   width: 100%;
   padding: 20px 150px;
   align-items: center;
+  justify-content: space-between;
   height: 75px;
-  border: 2.5px solid var(--neutral-2, #edf0f4);
+  border-bottom: 2.5px solid var(--neutral-2, #edf0f4);
+  background: var(--neutral-1, #fff);
+}
+
+nav .logo {
+  color: var(--neutral-6, #29323d);
+  font-family: "AlianzaScript600", Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+nav .menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: var(--neutral-7, #232323);
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menu .first-menu {
+  display: flex;
+  padding: 8px 29px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px 0px 0px 5px;
+  border: 1px solid var(--neutral-7, #232323);
+  background: var(--neutral-1, #fff);
+}
+
+.menu .mid-menu {
+  display: flex;
+  padding: 8px 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--neutral-7, #232323);
+  background: var(--neutral-1, #fff);
+  margin: 0 -1px;
+}
+
+.menu .last-menu {
+  display: flex;
+  padding: 8px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 5px 6px 0px;
+  border: 1px solid var(--neutral-7, #232323);
   background: var(--neutral-1, #fff);
 }
